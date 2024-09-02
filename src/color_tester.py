@@ -29,7 +29,7 @@ def delta(red_one: int, green_one: int, blue_one: int, red_two: int, green_two: 
         >>> round(delta(255, 255, 255, 127, 127, 127), 2) # round helps with floating point errors
         0.5
         >>> delta(0, 0, 0, 0, 0, 0)
-        1.0
+        0.0
 
     Args:
         red_one (int): a color range between 0 and 255 representing the red for the first color
