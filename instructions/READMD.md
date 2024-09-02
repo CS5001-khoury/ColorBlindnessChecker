@@ -152,7 +152,7 @@ This step we leave for you to work on, but we recommend keeping it **SIMPLE**. T
 
 
 #### STEP 4 Test:
-You actually defined your tests in STEP 2 with the examples, but now is your time to run tests. To make this step easier, we have provided [test_color_tester.py](../tests/test_color_tester.py). You can uncomment the function that deals with different_colors, and then run it. 
+You actually defined your tests in STEP 2 with the examples, but now is your time to run tests. To make this step easier, we have provided [test_color_tester.py](../tests/test_color_tester.py). You should run it now!
 
 > [!IMPORTANT]
 > Always test after **EVERY** function. It is very common to try to write multiple functions and then test, and while that feels faster it ends up being much, much slower in the long run. Test as you develop, and you will thank yourself in the future. 
