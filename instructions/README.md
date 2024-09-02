@@ -145,7 +145,7 @@ def different_colors(red_one: int, green_one: int, blue_one: int, red_two: int, 
 Can you think of other examples? You may want to run `delta` with a few color combinations and figure out what the result would be if different_colors had the same values. 
 
 > [!WARNING]
-> Don't skip the examples section. It is required for the exceeds grade in your rubric!
+> Don't skip the examples section. It is required for the meets grade in your rubric!
 
 #### STEP 3 Implement:
 This step we leave for you to work on, but we recommend keeping it **SIMPLE**. The solution code was only one line for this function. Actually, most of them they are one line, though really doing it in a few lines may be easier to read! You should not feel constrained, but try to keep it simple. The focus on this assignment is the process, not the code. 
@@ -201,13 +201,18 @@ You need to submit the following files:
 
 
 1. Learning (AG)
-   * 
+   * check_x functions are completed properly
 2. Approaching  (AG)
-   * 
+   * rgb_to_hex_x functions completed properly
+   * get_fails completed properly
+   * passes PEP8 style check
 3. Meets  (MG)
-   * 
+   * every function in color_tester.py has an examples section in docstring
+   * Properly formatted docstrings exist for each function
+   * Coding practice file provided
 4. Exceeds  (MG)
-   * 
+   * Report questions answered properly
+   * Report deeper thinking answered with some thought
 
 
 AG - Auto-graded  
