@@ -12,10 +12,10 @@ what type should be returned.
 * check_protanopia(int, int, int, int, int, int) -> bool
 * check_deuteranopia(int, int, int, int, int, int) -> bool
 * check_tritanopia(int, int, int, int, int, int) -> bool
-
-
-
-* main() -> None
+* rgb_to_hex_protanopia(int, int, int) -> str
+* rgb_to_hex_deuteranopia(int, int, int) -> str
+* rgb_to_hex_tritanopia(int, int, int) -> str
+* get_fails(int, int, int, int, int, int) -> str
 
 ### Provided functions
 The following functions are provided in [color_tester.py](../color_tester.py) and should not be changed.
