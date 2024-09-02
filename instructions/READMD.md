@@ -55,6 +55,111 @@ As you work on the project, take a look at some of the resources below. Sometime
 > This assignment you are focusing on the workings of a larger program. Once you have completed 
 > color_tester.py, you can run color_blindness_driver.py, and see a full working program! 
 
+### different_colors walkthrough
+This assignment is focusing on a repeating methodology in order to enforce a process to approach
+writing functions. To help you focus on methodology, let's walk through different_colors together.
+
+#### STEP 1 Define:
+
+* Ask yourself what are you meant to do (see [ColorTesterDesign](ColorTesterDesign.md)).
+  * In the document we give the function definition, and a **start** of the documentation.
+
+```python
+def different_colors(red_one: int, green_one: int, blue_one: int, red_two: int, green_two: int, blue_two: int) -> bool:
+    pass
+```
+
+While coding wise, that is all we have to do at the define stage, we are really doing is asking three questions.
+
+* What do I need to do?
+* What do I have to work with/need it to work?
+* What am I returning. 
+  
+#### STEP 2 Document:
+
+> [!CAUTION]
+> You will write more documentation than you will code. In fact, most functions are only one or two lines often repeating similar but different tasks. However, you your documentation will be extensive. This feels tedious now, but will save you in the future. Use this as a time to get into the habit. 
+
+In this step, you will write your docstring. The docstring is an opportunity to think through what you are doing, including expected input and output for the function. 
+
+We can once again start with the design document
+
+```python
+def different_colors(red_one: int, green_one: int, blue_one: int, red_two: int, green_two: int, blue_two: int) -> bool:
+    """
+    Compares two color RBG values to see how different they are.  Does
+    not convert, only compares.
+
+    Args:
+        red_one (int): a color range between 0 and 255 representing the red for the first color
+        green_one (int): a color range between 0 and 255 representing the green for the first color
+        blue_one (int):a color range between 0 and 255 representing the blue for the first color
+        red_two (int): a color range between 0 and 255 representing the red for the second color
+        green_two (int): a color range between 0 and 255 representing the green for the second color
+        blue_two (int): a color range between 0 and 255 representing the blue for the second color
+
+    Returns:
+        bool: True if the difference defined by delta is greater than MIN_DIFFERENCE
+    """
+    pass
+```
+
+> [!NOTE]
+> MIN_DIFFERENCE is a variable at the top of the file. You can use it directly in your function.
+
+The problem with the documentation above is that it isn't complete. One **MAJOR** missing requirement
+is the examples section. The examples section helps us think through input/output of the 
+function *before* we write it.
+
+```python
+def different_colors(red_one: int, green_one: int, blue_one: int, red_two: int, green_two: int, blue_two: int) -> bool:
+    """
+    Compares two color RBG values to see how different they are.  Does
+    not convert, only compares.
+
+
+    Examples:
+        >>> different_colors(255, 255, 255, 255, 255, 255)
+        False
+        >>> different_colors(255, 255, 255, 0, 0, 0)
+        True
+        >>> different_colors(255, 255, 255, 127, 127, 127)
+        True
+        >>> different_colors(0, 0, 0, 0, 0, 0)
+        False
+
+    Args:
+        red_one (int): a color range between 0 and 255 representing the red for the first color
+        green_one (int): a color range between 0 and 255 representing the green for the first color
+        blue_one (int):a color range between 0 and 255 representing the blue for the first color
+        red_two (int): a color range between 0 and 255 representing the red for the second color
+        green_two (int): a color range between 0 and 255 representing the green for the second color
+        blue_two (int): a color range between 0 and 255 representing the blue for the second color
+
+    Returns:
+        bool: True if the difference defined by delta is greater than MIN_DIFFERENCE
+    """
+    pass
+```
+
+Can you think of other examples? You may want to run `delta` with a few color combinations and figure out what the result would be if different_colors had the same values. 
+
+> [!WARNING]
+> Don't skip the examples section. It is required for the exceeds grade in your rubric!
+
+#### STEP 3 Implement:
+This step we leave for you to work on, but we recommend keeping it **SIMPLE**. The solution code was only one line for this function. Actually, most of them they are one line, though really doing it in a few lines may be easier to read! You should not feel constrained, but try to keep it simple. The focus on this assignment is the process, not the code. 
+
+
+#### STEP 4 Test:
+You actually defined your tests in STEP 2 with the examples, but now is your time to run tests. To make this step easier, we have provided [test_color_tester.py](../tests/test_color_tester.py). You can uncomment the function that deals with different_colors, and then run it. 
+
+> [!IMPORTANT]
+> Always test after **EVERY** function. It is very common to try to write multiple functions and then test, and while that feels faster it ends up being much, much slower in the long run. Test as you develop, and you will thank yourself in the future. 
+> 
+
+One last reminder, this is about the process! It may seem really repetitive, but our goal is for you to really build your understanding of how to write a function from scratch. 
+
 ## Report.md and README.md
 
 👉🏽 **Task**: Answer the questions in the [Report.md](../Report.md) and [README.md](../README.md) files. 
