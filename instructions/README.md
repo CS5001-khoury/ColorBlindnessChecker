@@ -78,7 +78,7 @@ While coding wise, that is all we have to do at the define stage, we are really 
 #### STEP 2 Document:
 
 > [!CAUTION]
-> You will write more documentation than you will code. In fact, most functions are only one or two lines often repeating similar but different tasks. However, you your documentation will be extensive. This feels tedious now, but will save you in the future. Use this as a time to get into the habit. 
+> You will write more documentation than you will code. In fact, most functions are only one or two lines often repeating similar but different tasks. However, your documentation will be extensive. This feels tedious now, but will save you in the future. Use this as a time to get into the habit. 
 
 In this step, you will write your docstring. The docstring is an opportunity to think through what you are doing, including expected input and output for the function. 
 
