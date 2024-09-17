@@ -71,7 +71,7 @@ by someone with protanopia, they are to similar.
 * blue_two (int): a color range between 0 and 255 representing the blue for the second color
 
 #### Returns
-boolean: returns true if the colors are too similar when someone has protanopia
+boolean: returns False if the colors are too similar when someone has protanopia
 
 #### Flow Diagram
 check_protanopia is called with (230,13,255) and (123,200,255):
@@ -98,7 +98,7 @@ deuteranopia.
 * blue_two (int): a color range between 0 and 255 representing the blue for the second color
 
 #### Returns
-boolean: returns true if the colors are too similar when someone has deuteranopia.
+boolean: returns False if the colors are too similar when someone has deuteranopia.
 
 > Deuteranopia: Defined as when someone looses all greens in an RGB value scheme
 
@@ -129,7 +129,7 @@ tritanopia.
 * blue_two (int): a color range between 0 and 255 representing the blue for the second color
 
 #### Returns
-boolean: returns true if the colors are too similar when someone has tritanopia
+boolean: returns False if the colors are too similar when someone has tritanopia
 
 
 #### Flow Diagram
