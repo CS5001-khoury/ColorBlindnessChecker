@@ -61,22 +61,22 @@ class TestColorTester(unittest.TestCase):
     #     """Tests get fails with simple inputs"""
     #     actual = color_tester.get_fails(255, 255, 255, 255, 255, 255).strip()
     #     expected = "Protanopia\nDeuteranopia\nTritanopia\n".strip()
-    #     self.assertEquals(actual, expected, "Tested with 255, 255, 255, 255, 255, 255")
+    #     self.assertEqual(actual, expected, "Tested with 255, 255, 255, 255, 255, 255")
     #     actual = color_tester.get_fails(255, 255, 255, 0, 0, 0).strip()
     #     expected = ""
-    #     self.assertEquals(actual, expected, "test with 255, 255, 255, 0, 0, 0")
+    #     self.assertEqual(actual, expected, "test with 255, 255, 255, 0, 0, 0")
 
     # def test_get_fails_more_complex(self) -> None:
     #     """Tests get fails with more complex inputs"""
     #     actual = color_tester.get_fails(255, 255, 255, 0, 0, 255).strip()
     #     expected = "Protanopia\n".strip()
-    #     self.assertEquals(actual, expected, "Tested with 255, 255, 255, 0, 0, 255")
+    #     self.assertEqual(actual, expected, "Tested with 255, 255, 255, 0, 0, 255")
     #     actual = color_tester.get_fails(0, 0, 255, 0, 0, 0).strip()
     #     expected = "Tritanopia".strip()
-    #     self.assertEquals(actual, expected, "test with 0, 0, 255, 0, 0, 255")
+    #     self.assertEqual(actual, expected, "test with 0, 0, 255, 0, 0, 255")
     #     actual = color_tester.get_fails(255, 255, 255, 255, 0, 255).strip()
     #     expected = "Protanopia\nDeuteranopia\n".strip()
-    #     self.assertEquals(actual, expected)
+    #     self.assertEqual(actual, expected)
 
 if __name__ == '__main__':
     unittest.main()
